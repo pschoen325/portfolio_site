@@ -1,0 +1,105 @@
+/*GOOGLE FONTS*/
+/*font-family: 'Bungee Hairline', cursive;
+font-family: 'Nixie One', cursive;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Comfortaa', cursive;
+END OF GOOGLE FONTS*/
+#id{
+  text-align: center;
+}
+*{
+  font-family: 'Bungee Hairline', sans-sarif;
+  list-style-type: none;
+}
+html, body{
+  height: 100%;
+}
+body {
+  margin: 0px;
+  background-color: #f1f1f1;
+}
+#jumbo{
+  display: flex;
+  height: 100vh;
+  background-image: url(http://i.imgur.com/jv5NM66.jpg);
+}
+.cover-thing {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.row1{
+  margin: 3em;
+}
+.bio{
+  background-color: #f1f1f1;
+  padding: 4em auto;
+  background-image:
+}
+.bio img{
+  border-radius: 50%;
+  width: 15em;
+  display: block;
+  margin: 2em auto;
+  border-bottom: 2px solid gray;
+}
+.bio p{
+  font-size: 2em;
+  text-align: center;
+  margin: 2em auto;
+}
+}
+.section{
+  display: flex;
+  height: 100vh;
+}
+body{
+  font-family: sans-serif;
+}
+.text{
+  margin-top: 120px;
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+  color: white;
+  font-size: 3em;
+  flex-direction: column;
+}
+.text h1{
+  text-align: center;
+  font-size: 3em;
+}
+.buttons button{
+  color: white;
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid white;
+  width: 6em;
+  font-size: 2em
+}
+.buttons button:hover{
+  background-color: gray;
+  opacity: 0.5;
+}
+.list-inline{
+  display: flex;
+}
+.list-inline li{
+  flex: 1;
+  text-align: center;
+  margin-top: 3em;
+}
+.icon img{
+  width: 50px;
+}
+#page3{
+  display: flex;
+  flex-direction: row;
+}
+.side-bar{
+  background-color: gray;
+  flex: 1;
+}
+.stage{
+  flex: 2;
+}
