@@ -21,7 +21,11 @@ body {
 #jumbo{
   display: flex;
   height: 100vh;
-  background-image: url(http://i.imgur.com/jv5NM66.jpg);
+  background: url(http://i.imgur.com/jv5NM66.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .cover-thing {
     width: 100%;
@@ -92,14 +96,51 @@ body{
 .icon img{
   width: 50px;
 }
-#page3{
+#projects{
   display: flex;
   flex-direction: row;
 }
 .side-bar{
   background-color: gray;
+  height: 100vh;
   flex: 1;
+  flex-grow: 1;
+}
+.side-bar ul{
+  padding: 0px;
+}
+.side-bar ul li{
+  margin: 30px auto;
+}
+.side-bar ul li button{
+  margin: 0px auto;
+  padding: 0px 50px;
+  font-size: 3em;
+  flex-grow: 2;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: transparent;
+  border-color: transparent;
+}
+.side-bar ul li button:hover{
+  background-color: #f1f1f1;
 }
 .stage{
   flex: 2;
+  flex-grow: 3;
+  background: url(https://i.gyazo.com/ec05fe1c0476a089186f03c44889fff7.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
+.verticle-text p{
+  text-align: center;
+  font-size: 3em;
+  color: white;
+}
+.animate(
+    { opacity: 0 },
+    { queue: false, duration: 'slow' }
+  )
