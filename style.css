@@ -11,6 +11,7 @@ END OF GOOGLE FONTS*/
   font-family: 'Bungee Hairline', sans-sarif;
   list-style-type: none;
 }
+html{}
 html, body{
   height: 100%;
 }
@@ -130,25 +131,34 @@ body{
 .stage{
   flex: 2;
   flex-grow: 3;
-  background: url(https://i.gyazo.com/8c00820979ca19e74efb64fa9ae6a341.gif) no-repeat center center fixed;
+  : url(https://i.gyazo.com/8c00820979ca19e74efb64fa9ae6a341.gif) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-size: 50%;
   background-position: 60% 90%;
-
+}
+.stage {
+  background: #35393c;
+}
+.stage img {
+  float: left;
+  height: 100%;
 }
 .verticle-text p{
   text-align: center;
   font-size: 3em;
   color: white;
 }
-  /* Small screens */
-  @media all and (max-width: 500px) {
-    #jumbo {
-      /* On small screens, we are no longer using row direction but column */
-      height: 60em;
-      width: auto;
-      background-size: 80em;
-    }
+.list-buttons{
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+.list-buttons p{
+  color: white;
+}
+.list-buttons :hover{
+  background: lightgray;
+}
