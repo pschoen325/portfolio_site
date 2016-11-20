@@ -197,5 +197,6 @@ body{
 .grid-item img {
   display: block;
   width: 350px;
-  box-shadow: 0px 10px 20px #888888;
+  -webkit-filter: drop-shadow(5px 5px 5px #888);
+  filter: drop-shadow(0px 5px 10px #222);
 }
