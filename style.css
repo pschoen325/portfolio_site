@@ -10,8 +10,11 @@ END OF GOOGLE FONTS*/
 *{
   font-family: 'Bungee Hairline', sans-sarif;
   list-style-type: none;
+  transition: all 0.3s ease 0s;
 }
-
+button:focus {
+    outline:none !important;
+}
 html, body{
   height: 100%;
 }
@@ -64,7 +67,7 @@ body{
   font-family: sans-serif;
 }
 .text{
-  margin-top: 120px;
+  margin-top: 80px;
   color: white;
   text-align: center;
   flex-grow: 1;
@@ -88,6 +91,19 @@ body{
 .buttons button:hover{
   background-color: gray;
   opacity: 0.5;
+  cursor: pointer;
+}
+.profile{
+  display:block;
+  margin: auto;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  background: url(./media/drawnicon.jpg) no-repeat center center;
+  background-size: contain;
+  }
+.profile:hover{
+  background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAjAAAAAJDhjNjIwNmI2LTg1YWMtNDAwMS04NDYyLTA1MTg4OGIwYjdhZA.jpg)
 }
 .list-inline{
   display: flex;
