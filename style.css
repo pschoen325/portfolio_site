@@ -143,7 +143,7 @@ body{
   background: #35393c;
 }
 .stage img {
-  float: left;
+  float: right;
   height: 100%;
 }
 .verticle-text p{
