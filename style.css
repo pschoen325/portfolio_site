@@ -22,16 +22,11 @@ body {
   margin: 0px;
   background-color: #f1f1f1;
 }
-#jumbo{
-  display: flex;
+.container1{
   height: 100vh;
-  background: url(http://i.imgur.com/jv5NM66.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url(http://i.imgur.com/jv5NM66.jpg) repeat fixed;
+  background-repeat: repeat-x;
   background-size: cover;
-}
-
 }
 .cover-thing {
     width: 100%;
@@ -42,9 +37,9 @@ body {
   padding: 4em;
 }
 .bio{
+  margin-bottom: 0px;
   background-color: #f1f1f1;
   padding: 4em auto;
-  background-image:
 }
 .bio img{
   border-radius: 50%;
@@ -58,29 +53,26 @@ body {
   text-align: center;
   margin: 2em auto;
 }
+.typing{
+  padding-top: 80px;
+  margin-top: 0px;
 }
 .section{
-  display: flex;
   height: 100vh;
 }
 body{
   font-family: sans-serif;
 }
 .text{
-  margin-top: 80px;
   color: white;
   text-align: center;
-  flex-grow: 1;
   color: white;
-  font-size: 3em;
-  flex-direction: column;
-}
+  font-size: 3em;}
 .text h1{
   text-align: center;
   font-size: 3em;
 }
 .buttons button{
-  margin-top: 10px;
   color: white;
   display: inline-block;
   background-color: transparent;
@@ -94,16 +86,20 @@ body{
   cursor: pointer;
 }
 .profile{
+  text-align: center;
   display:block;
   margin: auto;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  height: 15em;
+  width: 15em;
   background: url(./media/drawnicon.jpg) no-repeat center center;
   background-size: contain;
   }
 .profile:hover{
   background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAjAAAAAJDhjNjIwNmI2LTg1YWMtNDAwMS04NDYyLTA1MTg4OGIwYjdhZA.jpg)
+}
+.smol-text{
+  margin-top: 2em;
 }
 .list-inline{
   display: flex;
@@ -116,15 +112,17 @@ body{
 .icon img{
   width: 50px;
 }
+#pro-title{
+}
 #projects{
-  display: flex;
-  flex-direction: row;
+  background: url(https://i.gyazo.com/8c00820979ca19e74efb64fa9ae6a341.gif) no-repeat fixed;
+  background-position: right;
+  background-size: 100vh;
+  background-color: #34393d;
 }
 .side-bar{
   background-color: gray;
   height: 100vh;
-  flex: 1;
-  flex-grow: 1;
 }
 .side-bar ul{
   padding: 0px;
