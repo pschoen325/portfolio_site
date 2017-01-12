@@ -24,7 +24,7 @@ body {
 }
 .container1{
   height: 100vh;
-  background: url(http://i.imgur.com/jv5NM66.jpg) repeat fixed;
+  background-color: #0e0e0e;
   background-repeat: repeat-x;
   background-size: cover;
 }

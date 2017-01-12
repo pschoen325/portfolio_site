@@ -43,6 +43,10 @@ $(document).ready(function () {
   });
   $grid.packery( 'bindDraggabillyEvents', draggie );
   $grid.packery( 'bindUIDraggableEvents', $items );
+  // layout Packery after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.packery();
+  });
 
 
   // Message to Developers
