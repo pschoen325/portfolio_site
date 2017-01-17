@@ -70,7 +70,7 @@ $(document).ready(function () {
     var init = function() {
       console.log('hi');
     	clearInterval(glitchInterval);
-    	canvas.width = w = window.innerWidth;
+    	canvas.width = w = window.innerWidth - 20;
     	offset = w * .1;
     	canvas.height = h = 300;
     	glitchInterval = setInterval(function() {

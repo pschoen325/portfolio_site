@@ -67,7 +67,10 @@ body{
   color: white;
   text-align: center;
   color: white;
-  font-size: 3em;}
+  font-size: 3em;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .text h1{
   text-align: center;
   font-size: 3em;
