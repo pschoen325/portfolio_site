@@ -107,7 +107,7 @@ $(function(){
 });
 $(function(){
     $(".type1").typed({
-        strings: ["Junior Web Developer."],
+        strings: ["Full Stack Developer."],
         typeSpeed: 50,
         showCursor: false,
         startDelay: 1400
