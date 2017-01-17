@@ -54,7 +54,7 @@ body {
   margin: 2em auto;
 }
 .typing{
-  padding-top: 80px;
+  padding-top: 0px;
   margin-top: 0px;
 }
 .section{
@@ -223,6 +223,5 @@ body{
 
 /* Glitch */
 canvas {
-  margin: 20px auto;
-  display: block;
+  background: transparent;
 }

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  Glitch();
   $("section").css("min-height", $(window).height() );
 
   var __resetLayout = Packery.prototype._resetLayout;
@@ -51,54 +52,60 @@ $(document).ready(function () {
   // Message to Developers
   console.log("This site will be under a lot of work.");
   // Glitch
-  var canvas = document.getElementById('canvas')
-    , context = canvas.getContext('2d')
-    , img = new Image()
-    , w
-    , h
-    , offset
-    , glitchInterval;
+  function Glitch() {
+    var canvas = document.getElementById('canvas')
+      , context = canvas.getContext('2d')
+      , img = new Image()
+      , w
+      , h
+      , offset
+      , glitchInterval;
 
-  img.src = 'http://i.imgur.com/K82nzj8.png';
-  img.onload = function() {
-    init();
-  	window.onresize = init;
-  };
+    img.src = 'public/js/small_ps_logo.png';
+    img.onload = function() {
+      init();
+    	window.onresize = init;
+    };
 
-  var init = function() {
-  	clearInterval(glitchInterval);
-  	canvas.width = w = window.innerWidth;
-  	offset = w * .1;
-  	canvas.height = h = ~~(175 * ((w - (offset * 2)) / img.width));
-  	glitchInterval = setInterval(function() {
-  		clear();
-  		context.drawImage(img, 500, 500, img.width, 500, offset, 0, w - (offset * 2), h);
-  		setTimeout(glitchImg, randInt(250, 250));
-  	}, 500);
-  };
+    var init = function() {
+      console.log('hi');
+    	clearInterval(glitchInterval);
+    	canvas.width = w = window.innerWidth;
+    	offset = w * .1;
+    	canvas.height = h = 300;
+    	glitchInterval = setInterval(function() {
+    		clear();
+    		context.drawImage(img,  (window.innerWidth / 2 - h / 2), (0), h, h);
+    		setTimeout(glitchImg, randInt(3000, 10000));
+    	}, 500);
+    };
 
-  var clear = function() {
-  	context.rect(0, 0, w, h);
-  	context.fill();
-  };
+    var clear = function() {
+      context.fillStyle="#0e0e0e";
+      console.log(w);
+    	context.rect(0, 0, w, h);
+    	context.fill();
+    };
 
-  var glitchImg = function() {
-  	for (var i = 0; i < randInt(1, 13); i++) {
-  		var x = Math.random() * w;
-  		var y = Math.random() * h;
-  		var spliceWidth = w - x;
-  		var spliceHeight = randInt(5, h / 3);
-  		context.drawImage(canvas, 0, y, spliceWidth, spliceHeight, x, y, spliceWidth, spliceHeight);
-  		context.drawImage(canvas, spliceWidth, y, x, spliceHeight, 0, y, x, spliceHeight);
-  	}
-  };
+    var glitchImg = function() {
+    	for (var i = 0; i < randInt(1, 30); i++) {
+    		var x = Math.random() * w;
+    		var y = Math.random() * h;
+    		var spliceWidth = w - x;
+    		var spliceHeight = randInt(5, h / 3);
+    		context.drawImage(canvas, 0, y, spliceWidth, spliceHeight, x, y, spliceWidth, spliceHeight);
+    		context.drawImage(canvas, spliceWidth, y, x, spliceHeight, 0, y, x, spliceHeight);
+    	}
+    };
 
-  var randInt = function(a, b) {
-  	return ~~(Math.random() * (b - a) + a);
-  };
+    var randInt = function(a, b) {
+    	return ~~(Math.random() * (b - a) + a);
+    };
+  }
 });
 
 $(function(){
+  console.log('hi');
     $(".type").typed({
         strings: ["Paul Schoen"],
         typeSpeed: 80,
