@@ -66,7 +66,6 @@ $(document).ready(function () {
     // Swap in new text and reveal over 1500ms.
     setTimeout(1000);
     b.reveal(1500);
-    glitchText();
   $( function() {
     var $container = $('.grid').packery({
       itemSelector: '.grid-item',
@@ -217,9 +216,3 @@ $(document).ready(function () {
 //     }
 //   );
 // });
-
-
-function glitchText() {
-  setTimeout(1500);
-  $("h1").glitch();
-}
