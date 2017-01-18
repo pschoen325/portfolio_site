@@ -147,7 +147,7 @@ $(document).ready(function () {
             bg: null,    // background color
             maxint: 1,     // max interval between glitchings
             minint: 1,      // min interval between glitchings
-            maxglitch: 500,   // max number of twitches
+            maxglitch: 3,   // max number of twitches
             hshift: 3,      // max horizontal shift
             vshift: 3,      // max vertical shift
             direction: 'horizontal' // 'horizontal', 'vertical' or 'random'
@@ -220,5 +220,6 @@ $(document).ready(function () {
 
 
 $(function(){
+  setTimeout(3000);
   $("h1").glitch();
 });
