@@ -64,8 +64,9 @@ $(document).ready(function () {
       );
     });
     // Swap in new text and reveal over 1500ms.
-    b.reveal(15000);
-    GlitchText();
+    setTimeout(1000);
+    b.reveal(1500);
+    glitchText();
   $( function() {
     var $container = $('.grid').packery({
       itemSelector: '.grid-item',
@@ -146,9 +147,9 @@ $(document).ready(function () {
     $.fn.glitch = function(options) {
         var s = $.extend({
             bg: null,    // background color
-            maxint: 1,     // max interval between glitchings
-            minint: 1,      // min interval between glitchings
-            maxglitch: 3,   // max number of twitches
+            maxint: 20,     // max interval between glitchings
+            minint: 2,      // min interval between glitchings
+            maxglitch: 5,   // max number of twitches
             hshift: 3,      // max horizontal shift
             vshift: 3,      // max vertical shift
             direction: 'horizontal' // 'horizontal', 'vertical' or 'random'
@@ -216,7 +217,6 @@ $(document).ready(function () {
 //     }
 //   );
 // });
-
 
 
 function glitchText() {
