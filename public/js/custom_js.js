@@ -56,7 +56,7 @@ $(document).ready(function () {
   // Take care of some other stuff.
     $(function(){
         $(".type1").typed({
-            strings: ["Full Stack Developer."],
+            strings: ["Full Stack Developer"],
             typeSpeed: 50,
             showCursor: false,
             startDelay: 1400
