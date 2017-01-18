@@ -81,7 +81,7 @@ body{
   background-color: transparent;
   border: 2px solid white;
   width: 6em;
-  font-size: 2em
+  font-size: 1em
 }
 .buttons button:hover{
   background-color: gray;

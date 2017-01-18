@@ -145,9 +145,9 @@ $(document).ready(function () {
     $.fn.glitch = function(options) {
         var s = $.extend({
             bg: null,    // background color
-            maxint: 20,     // max interval between glitchings
-            minint: 2,      // min interval between glitchings
-            maxglitch: 5,   // max number of twitches
+            maxint: 1,     // max interval between glitchings
+            minint: 1,      // min interval between glitchings
+            maxglitch: 500,   // max number of twitches
             hshift: 3,      // max horizontal shift
             vshift: 3,      // max vertical shift
             direction: 'horizontal' // 'horizontal', 'vertical' or 'random'
