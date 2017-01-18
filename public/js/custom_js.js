@@ -102,7 +102,7 @@ $(document).ready(function () {
     var init = function() {
       console.log('hi');
     	clearInterval(glitchInterval);
-    	canvas.width = w = window.innerWidth - 20;
+    	canvas.width = w = window.innerWidth - 100;
     	offset = w * .1;
     	canvas.height = h = 300;
     	glitchInterval = setInterval(function() {
@@ -147,7 +147,7 @@ $(document).ready(function () {
     $.fn.glitch = function(options) {
         var s = $.extend({
             bg: null,    // background color
-            maxint: 20,     // max interval between glitchings
+            maxint: 2,     // max interval between glitchings
             minint: 2,      // min interval between glitchings
             maxglitch: 5,   // max number of twitches
             hshift: 3,      // max horizontal shift

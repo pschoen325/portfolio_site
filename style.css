@@ -223,6 +223,10 @@ body{
   background: #C90;
   z-index: 2; /* keep dragged item on top */
 }
+.logo{
+  padding: 0px;
+  margin: 0px;
+}
 
 /* Glitch */
 canvas {
