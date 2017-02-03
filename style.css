@@ -121,6 +121,7 @@ body{
   background: url(https://i.gyazo.com/8c00820979ca19e74efb64fa9ae6a341.gif) no-repeat fixed;
   background-position: right;
   background-size: 100vh;
+  height: 100vh;
   background-color: #34393d;
 }
 .side-bar{
